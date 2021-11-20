@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 2</title>
+    <script src="gl-matrix.js"></script>
+    <script src="app.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+</head>
+
+<style>
+    canvas {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+</style>
+
+<body onload="app();">
+    <div class="container">
+        <canvas style="z-index:1;" id="canvas" width="500px" height="500px"> Your browser does not support HTML5</canvas>
+    </div>
+
+    <div style="margin-top:500px" class="container">
+        <h3>SUPER BUG ZAPPER 3D</h3>
+        <p>Click the bacteria to poison it. Click and drag to rotate the sphere!</p>
+        <p>Score: <span id="score"></span></p>
+        <p>Chances: <span id="chances"></span></p>
+        <p>Bacteria remaining: <span id="remaining"></span></p>
+        <p>Bacteria Consumed by Other Bacteria: <span id="consumed"></span></p>
+    </div>
+    
+    
+    
+    <div class="container">
+        <p id="win-lose"></p>
+    </div>
+   
+</body>
+
+</html>
